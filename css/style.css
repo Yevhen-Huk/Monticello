@@ -1,0 +1,338 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.btn-menu {
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 98px;
+  letter-spacing: 0.5rem;
+}
+
+.h2, .h4, p, .btn {
+  color: #2C4058;
+}
+
+.h2 {
+  font-size: 44px;
+  line-height: 54px;
+  font-weight: bold;
+}
+
+.h2-center {
+  text-align: center;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.h4 {
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.title-description {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.34rem;
+  padding: 18px 0;
+}
+
+h1,
+.title-description {
+  color: #FFFFFF;
+}
+
+.title-description,
+h1 {
+  text-align: center;
+}
+
+.socials-link {
+  font-size: 14px;
+}
+
+.project-info {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Open Sans;
+}
+.project-location {
+  font-family: Open Sans;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.body {
+  max-width: 1600px;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.btn {
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  padding: 15px 40px;
+  border: 1px solid #000000;
+  right: 0;
+  bottom: 0;
+}
+
+.header__banner-nav {
+  position: fixed;
+  right: 2.5vw;
+  top: 292px;
+}
+.header__banner-nav-item {
+  padding-bottom: 34px;
+}
+
+.link-bar-menu:before,
+.link-banner-menu::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.8rem;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.link-bar-menu:before:hover,
+.link-banner-menu::after:hover {
+  background-color: #FFFFFF;
+}
+
+.current:after {
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.header__socials {
+  padding-top: 8px;
+}
+
+.socials-list {
+  display: flex;
+}
+
+.socials-item--padding {
+  padding-right: 20px;
+}
+
+.socials-link {
+  padding-top: 11px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  height: max-content;
+  background-repeat: no-repeat;
+  background: url("../../img/header-img.png"), url("../../img/header-bg.jpg");
+  margin-bottom: 99px;
+}
+.header__bar {
+  display: flex;
+  padding: 53px 215px 0 215px;
+  justify-content: space-between;
+}
+.header__nav {
+  padding: 18px 0 0 34px;
+}
+.header__nav-list {
+  display: flex;
+}
+.header__nav-item {
+  padding: 0 36px;
+}
+.header__socials {
+  margin-right: 0;
+}
+.header__banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-position: bottom;
+}
+.header__banner-content {
+  padding: 222px 0 270px;
+}
+.header__btn-down {
+  position: relative;
+  right: 50%;
+  left: 50%;
+  bottom: 48px;
+  transform: translateX(-50%);
+  display: block;
+  width: fit-content;
+}
+
+.main__projects {
+  padding: 0 0 91px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main__projects:before {
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 6%;
+  /* or 100px */
+  border-top: 1px solid #000000;
+  margin: 0 auto;
+}
+
+.project-item {
+  display: flex;
+}
+.project-item--first {
+  padding: 90px 0;
+}
+.project-item--second {
+  padding: 75px 0;
+}
+.project-photo {
+  position: relative;
+  height: fit-content;
+}
+.project-photo--left {
+  background-color: #55B7FF;
+  max-width: 585px;
+}
+.project-img {
+  position: relative;
+}
+.project-img--shift-r {
+  left: 215px;
+  top: 57px;
+}
+.project-description {
+  align-self: center;
+}
+.project-description--right {
+  margin: 0 13.5vw 0 20.5vw;
+  padding: 150px 0 0 2px;
+}
+.project-info {
+  padding: 18px 0 49px;
+}
+.project-location {
+  margin-top: 76px;
+  color: #000000;
+}
+.project-photo--right {
+  background-color: #7E5AFF;
+  max-width: 585px;
+}
+.project-img--shift-l {
+  right: 260px;
+  top: 57px;
+}
+.project-description--left {
+  margin: 0 17.5vw 0 13.5vw;
+  padding: 150px 0 0 0;
+}
+
+.main__gallery {
+  height: 1000px;
+  background-color: rebeccapurple;
+}
+
+.main__contact {
+  height: 850px;
+  background-color: greenyellow;
+}
+
+.footer {
+  height: 850px;
+  background-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+@import "typography";
+
+.body {
+  max-width: 1600px;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.main {
+}
+
+.content {
+
+}
+
+
+@media screen and (max-width: $min-large) {
+
+}
+
+@media screen and (max-width: $min-desktop) {
+
+}
+
+@media screen and (max-width: $min-tab) {
+
+}

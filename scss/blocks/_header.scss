@@ -1,0 +1,53 @@
+.header {
+  height: max-content;
+  background-repeat: no-repeat;
+  background: url("../../img/header-img.png"), url("../../img/header-bg.jpg");
+  margin-bottom: 99px;
+
+  &__bar {
+    display: flex;
+    padding: 53px 215px 0 215px;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    padding: 18px 0 0 34px;
+
+    &-list{
+      display: flex;
+    }
+
+    &-item {
+      padding: 0 36px;
+    }
+  }
+
+  &__socials {
+    margin-right: 0;
+  }
+
+  &__banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    background-position: bottom;
+
+    &-content {
+      padding: 222px 0 270px;
+    }
+
+  }
+
+  &__btn-down {
+    position: relative;
+    right: 50%;
+    left: 50%;
+    bottom: 48px;
+    transform: translateX(-50%);
+    display: block;
+    width: fit-content;
+  }
+
+
+}
