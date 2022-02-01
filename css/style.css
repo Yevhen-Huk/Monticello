@@ -92,16 +92,22 @@ h1 {
   line-height: 54px;
   font-weight: bold;
 }
-
 .h2-center {
   text-align: center;
   width: 100%;
   padding-top: 30px;
 }
+.h2-center--white {
+  color: #FFFFFF;
+}
 
 .h4 {
   font-size: 22px;
   line-height: 27px;
+  font-weight: bold;
+}
+.h4--news-descr {
+  padding-bottom: 12px;
 }
 
 .title-description {
@@ -137,6 +143,23 @@ h1 {
   line-height: 20px;
 }
 
+.news-content-short {
+  font-size: 18px;
+  line-height: 25px;
+  font-family: Open Sans;
+}
+
+.author-name {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.publication-date {
+  font-size: 14px;
+  line-height: 17px;
+  color: #55B7FF;
+}
+
 .body {
   max-width: 1600px;
   margin: 0 auto;
@@ -154,9 +177,15 @@ h1 {
   bottom: 0;
 }
 
+.btn:hover {
+  color: #FFFFFF;
+  transition: all 0.3s ease-in-out;
+  background-color: #2C4058;
+}
+
 .header__banner-nav {
   position: fixed;
-  right: 2.5vw;
+  right: 40px;
   top: 292px;
 }
 .header__banner-nav-item {
@@ -249,6 +278,14 @@ h1 {
   transform: translateX(-50%);
   display: block;
   width: fit-content;
+}
+
+.carousel-item {
+  width: 370px;
+  height: 514px;
+}
+.carousel-item-description {
+  padding: 27px 0 0 20px;
 }
 
 .main__projects {

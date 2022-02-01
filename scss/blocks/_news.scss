@@ -1,3 +1,12 @@
 .main__news {
 
 }
+
+.carousel-item {
+  width: 370px;
+  height: 514px;
+
+  &-description {
+    padding: 27px 0 0 20px;
+  }
+}

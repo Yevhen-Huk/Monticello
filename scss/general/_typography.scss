@@ -33,17 +33,25 @@ h1 {
   font-size: 44px;
   line-height: 54px;
   font-weight: bold;
-}
 
-.h2-center {
-  text-align: center;
-  width: 100%;
-  padding-top: 30px;
+  &-center {
+    text-align: center;
+    width: 100%;
+    padding-top: 30px;
+
+    &--white {
+      color: $color-white;
+    }
+  }
 }
 
 .h4 {
   font-size: 22px;
   line-height: 27px;
+  font-weight: bold;
+  &--news-descr {
+    padding-bottom: 12px;
+  }
 }
 
 .title-description {
@@ -80,4 +88,24 @@ h1 {
     font-size: 15px;
     line-height: 20px;
   }
+}
+
+.news {
+  &-content-short {
+    font-size: 18px;
+    line-height: 25px;
+    font-family: $font-location;
+  }
+
+}
+
+.author-name {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.publication-date {
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-project-bg1;
 }

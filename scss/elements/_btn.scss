@@ -8,3 +8,9 @@
   bottom: 0;
 }
 
+.btn:hover {
+  color: $color-white;
+  transition: all 0.3s ease-in-out;
+  background-color: $color-main;
+}
+
