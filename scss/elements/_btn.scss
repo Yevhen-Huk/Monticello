@@ -1,11 +1,39 @@
-.btn {
+.btn,
+.btn-submit {
   font-size: 14px;
   line-height: 17px;
-  color: #000000;
+  color: $color-black;
   padding: 15px 40px;
-  border: 1px solid #000000;
+  border: 1px solid $color-black;
   right: 0;
   bottom: 0;
+
+  &-center {
+    margin: 0 auto;
+  }
+
+  &-wide {
+    padding: 15px 55px;
+  }
+}
+
+.btn-submit {
+  transform: translateX(171px);
+  background: none;
+  padding: 15px 34px;
+  border: 1px solid #2C4058;
+  font-size: 18px;
+}
+
+.form-field {
+  padding-bottom: 10px;
+  margin: 0 0 36px;
+  border-style: none;
+  width: 85%;
+  background: transparent;
+  border-bottom: 1px solid $color-black;
+  font-size: 18px;
+  opacity: 50%;
 }
 
 .btn:hover {

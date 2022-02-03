@@ -1,4 +1,47 @@
 .main__gallery {
-  height: 1000px;
-  background-color: rebeccapurple;
+  padding: 136px 0 138px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__gallery:before {
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 6%;
+  border-top: 1px solid #000000;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  object-fit: contain;
+
+  &-min {
+
+  }
+}
+
+.img {
+    &-container {
+    display: flex;
+    padding: 88px 215px 52px;
+  }
+
+  &-main {
+
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item{
+      width: 280px;
+      height: 224px;
+      margin: 0 5px 0 10px;
+
+    }
+  }
 }

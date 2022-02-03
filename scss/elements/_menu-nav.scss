@@ -2,7 +2,7 @@
 
   &-nav {
     position: fixed;
-    right: 40px;
+    right: 8vw;
     top: 292px;
     z-index: 1;
 
@@ -25,6 +25,10 @@
   margin-right: 0.8rem;
   background-color: rgba(255, 255, 255, 0);
 }
+
+.link-banner-menu::after{
+  box-shadow: 2px 3px 2px rgb(0 0 0 / 75%), -2px -2px 2px rgb(45 40 60 / 75%);}
+
 
 //.link-bar-menu:before:hover .link-bar-menu:before {
 //  background-color: #FFFFFF;

@@ -29,6 +29,14 @@ menuDots.forEach(function (dot, idx) {
     })
 })
 
+const fixedMenu = document.getElementsByClassName('header__banner-nav');
+const header = document.getElementsByClassName('header');
+
+let a = fixedMenu.style;
+
+console.log(header);
+
+
 // const header = document.getElementsByClassName('header');
 // const projects = document.getElementById('projects');
 // const news = document.getElementById('news');

@@ -109,3 +109,20 @@ h1 {
   line-height: 17px;
   color: $color-project-bg1;
 }
+
+.contacts-item {
+  font-size: 18px;
+  line-height: 28px;
+  color: $color-main;
+  display: block;
+}
+
+.icon-contacts {
+ color: $color-icon-contacts;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.copywright {
+  color: $color-white;
+}

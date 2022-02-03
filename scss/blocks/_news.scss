@@ -4,6 +4,8 @@
   background: url("../../img/news-img.png"), url("../../img/news-bg.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
+  display: flex;
+  flex-direction: column;
 }
 
 .main__news:before {
@@ -13,7 +15,7 @@
   bottom  : 0;
   height  : 2px;
   width   : 6%;
-  border-top:1px solid #000000;
+  border-top:1px solid #ffffff;
   margin: 0 auto;
 }
 
