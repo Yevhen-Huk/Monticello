@@ -4,14 +4,15 @@
     position: fixed;
     right: 40px;
     top: 292px;
+    z-index: 1;
 
 
     &-item {
       padding-bottom: 34px;
     }
   }
-
 }
+
 .link-bar-menu:before,
 .link-banner-menu::after {
   content: '';
@@ -25,10 +26,9 @@
   background-color: rgba(255, 255, 255, 0);
 }
 
-.link-bar-menu:before:hover,
-.link-banner-menu::after:hover {
-  background-color: #FFFFFF;
-}
+//.link-bar-menu:before:hover .link-bar-menu:before {
+//  background-color: #FFFFFF;
+//}
 
 .current:after {
   background-color: rgba(255, 255, 255, 1);
