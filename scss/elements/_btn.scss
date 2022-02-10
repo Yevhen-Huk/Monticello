@@ -36,7 +36,8 @@
   opacity: 50%;
 }
 
-.btn:hover {
+.btn:hover,
+.btn-submit:hover {
   color: $color-white;
   transition: all 0.3s ease-in-out;
   background-color: $color-main;

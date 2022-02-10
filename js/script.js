@@ -2,54 +2,29 @@
 
 // Menu dots
 
-const dots = document.querySelectorAll("a");
+window.addEventListener('DOMContentLoaded', () => {
 
-let menuDots = [], current = 0;
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+            console.log(id);
+            if (entry.intersectionRatio > 0) {
+                document.querySelector(`nav li a[href="#${id}"]`).classList.add('active-dot');
+            } else {
+                document.querySelector(`nav li a[href="#${id}"]`).classList.remove('active-dot');
+            }
+        });
+    });
 
-console.log(menuDots);
-dots.forEach(function (elem){
-    if (elem.className === 'link-banner-menu') {
-        menuDots.push(elem);
-    }
-    return menuDots;
-} )
-console.log(menuDots);
+    // Track all sections that have an `id` applied
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
 
-menuDots[0].className += ' current';
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+});
 
-menuDots.forEach(function (dot, idx) {
-    dot.addEventListener('click', function (e) {
-        if (idx !== current) {
-            menuDots [current].className = 'link-banner-menu';
-        }
-        console.log(current);
-        menuDots [idx].className += ' current';
-        current = idx;
-        return current;
-    })
-})
-
-const fixedMenu = document.getElementsByClassName('header__banner-nav');
-const header = document.getElementsByClassName('header');
-
-let a = fixedMenu.style;
-
-console.log(header);
-
-
-// const header = document.getElementsByClassName('header');
-// const projects = document.getElementById('projects');
-// const news = document.getElementById('news');
-//
-// const sections = [header, projects, news];
-// console.log(sections);
-//
-// //  sections is not an array
-//
-// sections.forEach(function (section, idx) {
-//     section.addEventListener('mouseenter', function (){
-//         if (section[this] === current) {
-//             menuDots [idx].className += ' current';
-//         }
-//     })
-// })

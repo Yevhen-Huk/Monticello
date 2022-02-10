@@ -15,19 +15,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body class="body">
-<header class="header" id="start">
-    <div class="header__bar">
+<header class="header">
+    <section id="start">
+        <div class="header__bar">
             <div class="header__logo">
                 <a href="#" target="_blank"><img src="img/logo.png" alt="Logo"></a>
             </div>
-            <nav class="header__nav">
+            <div class="header__nav">
                 <ul class="header__nav-list">
-                    <li class="header__nav-item"><a class="link-bar-menu current" href="#start">ABOUT US</a></li>
+                    <li class="header__nav-item"><a class="link-bar-menu" href="#start">ABOUT US</a></li>
                     <li class="header__nav-item"><a class="link-bar-menu" href="#projects">PROJECTS</a></li>
                     <li class="header__nav-item"><a class="link-bar-menu" href="#news">NEWS</a></li>
                     <li class="header__nav-item"><a class="link-bar-menu" href="#contact">CONTACT</a></li>
                 </ul>
-            </nav>
+            </div>
             <nav class="header__socials">
                 <ul class="socials-list">
                     <li class="socials-item socials-item--padding">
@@ -42,12 +43,14 @@
                 </ul>
             </nav>
         </div>
+    </section>
+
     <div class="header__banner">
         <div class="header__banner-content">
             <h1>SIMPLE & MODERN</h1>
             <p class="title-description">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
         </div>
-        <div class="header__banner-nav dotstyle dotstyle-hop">
+        <nav class="header__banner-nav dotstyle dotstyle-hop">
             <ul class="banner-nav-list">
                 <li class="header__banner-nav-item"><a class="link-banner-menu" href="#start"></a></li>
                 <li class="header__banner-nav-item"><a class="link-banner-menu" href="#projects"></a></li>
@@ -55,7 +58,7 @@
                 <li class="header__banner-nav-item"><a class="link-banner-menu" href="#gallery"></a></li>
                 <li class="header__banner-nav-item"><a class="link-banner-menu" href="#contact"></a></li>
             </ul>
-        </div>
+        </nav>
     </div>
     <a class="header__btn-down" href="#projects">
         <img src="img/header-arrow.png" alt="Arrow down">
@@ -217,7 +220,7 @@
     <div class="footer__map">
         <iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20355.79318754681!2d-73.91998874216857!3d40.67602329756037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1643909572213!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-    <div class="footer__contact">
+    <section class="footer__contact" id="contact">
         <h2 class="h2 h2-center">GET IN TOUCH</h2>
         <div class="contacts-list">
             <a class="contacts-item" href=""><i class="fas fa-map-marker-alt icon-contacts"></i>91 Nolan Extensions Suite 670</a>
@@ -232,7 +235,7 @@
                 <input class="btn-submit" type="submit" value="SUBMIT">
             </form>
         </div>
-    </div>
+    </section>
     <div class="footer__end">
         <div class="credits">
             <div class="footer__logo">
@@ -262,9 +265,8 @@
         crossorigin="anonymous">
 </script>
 
-<script src="js/libs/slick/slick.min.js"></script>
+<!--<script src="js/libs/slick/slick.min.js"></script>-->
+<!--<script src="js/slick.js"></script>-->
 <script src="js/script.js"></script>
-<script src="js/slick.js"></script>
-
 </body>
 </html>

@@ -21,3 +21,11 @@
   flex-direction: column;
   align-items: center;
 }
+
+.socials-link:hover {
+  background-color: $color-white;
+}
+
+.socials-link:hover .fab {
+  color: $color-main;
+}
