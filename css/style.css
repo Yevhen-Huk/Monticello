@@ -301,7 +301,7 @@ h1 {
 .header {
   height: max-content;
   background-repeat: no-repeat;
-  background: url("../../img/header-img.png"), url("../../img/header-bg.jpg");
+  background: url("../img/header-img.png"), url("../img/header-bg.jpg");
   margin-bottom: 99px;
 }
 .header__bar {
@@ -527,7 +527,7 @@ h1 {
 }
 .footer__end {
   padding: 202px 26vw 234px;
-  background: url("../../img/footer-img.png"), url("../../img/footer-bg.jpg");
+  background: url("../img/footer-img.png"), url("../img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   display: flex;
