@@ -73,6 +73,7 @@ a {
   color: #FFFFFF;
   font-size: 12px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 h1 {
