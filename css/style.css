@@ -205,11 +205,12 @@ h1 {
 }
 
 .btn-submit {
-  transform: translateX(171px);
   background: none;
   padding: 15px 34px;
   border: 1px solid #2C4058;
   font-size: 18px;
+  align-self: end;
+  margin: 0 3vw;
 }
 
 .form-field {
@@ -232,7 +233,7 @@ h1 {
 
 .header__banner-nav {
   position: fixed;
-  right: 8vw;
+  right: 40px;
   top: 292px;
   z-index: 1;
 }
@@ -307,6 +308,7 @@ h1 {
 }
 .header__bar {
   display: flex;
+  flex-wrap: wrap;
   padding: 53px 215px 0 215px;
   justify-content: space-between;
 }
@@ -511,6 +513,7 @@ h1 {
 }
 .img-container {
   display: flex;
+  flex-wrap: wrap;
   padding: 88px 215px 52px;
 }
 .img-list {
@@ -548,6 +551,10 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
   bottom: 400px;
+}
+.footer__form {
+  display: flex;
+  flex-direction: column;
 }
 .footer__logo {
   margin-bottom: 40px;

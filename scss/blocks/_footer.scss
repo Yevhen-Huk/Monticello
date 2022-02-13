@@ -27,6 +27,11 @@
     bottom: 400px;
   }
 
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__logo {
     margin-bottom: 40px;
   }

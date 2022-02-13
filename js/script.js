@@ -26,5 +26,24 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
+    let vw;
+    let dotNavBar = document.getElementById('dot-nav-menu');
+
+    let adjDotNavBar = function () {
+        let rightDotNavBar;
+        vw = window.screen.width;
+
+        if (vw > 1600) {
+            rightDotNavBar = (vw - 1600)/2 + 40 + 'px';
+            console.log(rightDotNavBar);
+
+            dotNavBar.style.setProperty('right', rightDotNavBar);
+        }
+        console.log();
+    }
+
+    adjDotNavBar();
+
 });
 

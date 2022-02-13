@@ -6,6 +6,7 @@
 
   &__bar {
     display: flex;
+    flex-wrap: wrap;
     padding: 53px 215px 0 215px;
     justify-content: space-between;
   }

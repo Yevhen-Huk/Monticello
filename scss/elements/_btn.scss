@@ -18,11 +18,12 @@
 }
 
 .btn-submit {
-  transform: translateX(171px);
   background: none;
   padding: 15px 34px;
   border: 1px solid #2C4058;
   font-size: 18px;
+  align-self: end;
+  margin: 0 3vw;
 }
 
 .form-field {

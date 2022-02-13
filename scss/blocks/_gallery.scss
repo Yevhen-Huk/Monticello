@@ -26,6 +26,7 @@
 .img {
     &-container {
     display: flex;
+    flex-wrap: wrap;
     padding: 88px 215px 52px;
   }
 
